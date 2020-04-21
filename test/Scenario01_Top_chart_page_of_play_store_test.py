@@ -18,7 +18,7 @@ class TestStart():
                 playstorepage.perform_click_on_item(appname)
                 reviews=playstorepage.total_reviews(appname)
                 lastupdate=playstorepage.last_update(appname)
-               # playstorepage.calculate_score(today,reviews,lastupdate)
+                #playstorepage.calculate_score(today,reviews,lastupdate)
 
                 playstorepage.top_chart_click()
 

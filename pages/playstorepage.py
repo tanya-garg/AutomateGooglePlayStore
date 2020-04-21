@@ -49,6 +49,7 @@ class PlayStorePage():
             return reviews.text
         except BaseException as e:
             print("Review element not found : ",(str(e.args)))
+            return False
 
     # method to fetch app last Update
     def last_update(self,appname):
@@ -59,7 +60,7 @@ class PlayStorePage():
             return updatexpath.text
         except BaseException as e:
             print("Update element not found : ",(str(e.args)))
-            raise
+            return False
 
     # method to click on Top Chart
     def top_chart_click(self):
@@ -76,8 +77,8 @@ class PlayStorePage():
             raise
 
     def calculate_score(self,today,reviews,lastupdate):
-       print(lastupdate)
-        # delta=today-lastdate
+        print(date(lastupdate))
+        #delta=today-lastdate
         # print("Number of days : ",delta.days)
 
 

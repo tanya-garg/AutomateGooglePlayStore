@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e431fea-5028-4350-9d38-955acf300444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/playstorepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playstorepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumdriver.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/Scenario01_Top_chart_page_of_play_store_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Scenario01_Top_chart_page_of_play_store_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,22 +87,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="99" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587388480190" />
-    <state width="1259" height="169" key="GridCell.Tab.0.bottom" timestamp="1587460992485">
+    <state width="1259" height="134" key="GridCell.Tab.0.bottom" timestamp="1587464798418">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="169" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587460992485" />
-    <state width="1259" height="169" key="GridCell.Tab.0.center" timestamp="1587460992484">
+    <state width="1259" height="134" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587464798418" />
+    <state width="1259" height="134" key="GridCell.Tab.0.center" timestamp="1587464798417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="169" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587460992484" />
-    <state width="1259" height="169" key="GridCell.Tab.0.left" timestamp="1587460992484">
+    <state width="1259" height="134" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587464798417" />
+    <state width="1259" height="134" key="GridCell.Tab.0.left" timestamp="1587464798417">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="169" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587460992484" />
-    <state width="1259" height="169" key="GridCell.Tab.0.right" timestamp="1587460992484">
+    <state width="1259" height="134" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587464798417" />
+    <state width="1259" height="134" key="GridCell.Tab.0.right" timestamp="1587464798418">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="169" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587460992484" />
+    <state width="1259" height="134" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587464798418" />
     <state width="1259" height="314" key="GridCell.Tab.1.bottom" timestamp="1587447946422">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -149,7 +147,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>67</line>
+          <line>68</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -164,12 +162,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>79</line>
+          <line>80</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>80</line>
+          <line>81</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
