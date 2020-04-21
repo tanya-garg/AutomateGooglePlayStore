@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e431fea-5028-4350-9d38-955acf300444" name="Default Changelist" comment="" />
+    <list default="true" id="1e431fea-5028-4350-9d38-955acf300444" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/playstorepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playstorepage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/seleniumdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumdriver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Scenario01_Top_chart_page_of_play_store_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/Scenario01_Top_chart_page_of_play_store_test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +20,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1anoOmXCbdHlkQPJHKtsyzWkcjb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -22,6 +32,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -128,37 +139,37 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/seleniumdriver.py</url>
-          <line>65</line>
+          <line>64</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/test/Scenario01_Top_chart_page_of_play_store_test.py</url>
-          <line>24</line>
+          <line>22</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>85</line>
+          <line>67</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>63</line>
+          <line>46</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/seleniumdriver.py</url>
-          <line>97</line>
+          <line>96</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>97</line>
+          <line>79</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/pages/playstorepage.py</url>
-          <line>98</line>
+          <line>80</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>

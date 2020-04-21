@@ -27,8 +27,8 @@ class Driver:
         try:
             element = self.driver.find_elements(By.XPATH,locator)
             return element
-        except:
-            self.log.info("Element not found")
+        except Exception as e:
+            print("Element not found",str(e.args))
 
 
     # Get web element based on the locator value
@@ -50,10 +50,9 @@ class Driver:
                 return True
             else:
                 return False
-                self.log.info("Element not found")
-        except:
-            self.log.info("Some error occured, element not found")
-            return False
+        except Exception as e:
+            print("Element not found", str(e.args))
+            raise
 
     # Method to perform element click
     def elementClick(self,locator):
@@ -63,8 +62,8 @@ class Driver:
             # self.getelement(locator).click()
             return True
         except Exception as e:
-            print(e)
-            return False
+            print(str(e.args))
+            raise
 
     # Method for scrolling of web page
     def webScroll(self, direction):
@@ -84,7 +83,7 @@ class Driver:
                 return True
         except:
             self.log.error("Scrolling failed")
-            return False
+            raise
 
     # Method to wait for an element
     def waitforelement(self, locator):
@@ -100,4 +99,4 @@ class Driver:
 
         except Exception as e:
             print("Element was not found, wait limit exceeded: " + str(e.args))
-            return False
+            raise

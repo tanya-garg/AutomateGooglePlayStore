@@ -1,8 +1,5 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver import ActionChains
 from datetime import date
-
 import time
 
 class PlayStorePage():
@@ -15,8 +12,6 @@ class PlayStorePage():
         self.play_store_reviews_xpath= "//h1//span[text()='{}']//following::span[@class='AYi5wd TBRnV']/span[contains(@aria-label,'ratings')]"
         self.play_store_last_update_xpath="//h1//span[text()='{}']/following::div[@class='BgcNfc' and text()='Updated']//following-sibling::span//div//span"
         self.play_store_top_charts_click_xpath="//*[text()='Top charts']"
-       # self.play_store_app_name_xpath="(//div[@class='ZmHEEd  fLyRuc']//div[@class='WsMG1c nnK0zc'])[1]"
-       # self.player_store_xpath="(//div[@class='ZmHEEd  fLyRuc'])[1]//div[@class='k6AFYd']"
 
         # method to fetch all applications names
     def play_store_page_item_list(self):
@@ -30,37 +25,25 @@ class PlayStorePage():
             print("Applications Name : ",itemlist)
             return itemlist
         except :
-            print("menu page not launced")
-            # print(message)
-            # utils.screenshot(self, utils.casename(self), "true")
-            # allure.attach(self.driver.get_screenshot_as_png(), name=utils.casename(self),
-            #               attachment_type=allure.attachment_type.PNG)
+            print("menu page not launched")
             raise
 
     # method to click on app
     def perform_click_on_item(self,nameList):
         try:
-            time.sleep(4)
-            # wait = WebDriverWait(self.driver, 10, poll_frequency=2,
-            #                      ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException,
-            #                                          NoSuchElementException])
-            # element = wait.until(EC.element_to_be_clickable((By.XPATH, self.play_store_app_name_xpath)))
+            time.sleep(3)
             element = self.driver.getelement(self.play_store_app_name_xpath.format(nameList))
             self.driver.elementClick(element)
             print("Click Performed on : ",nameList)
-            time.sleep(10)
 
         except BaseException as e:
             print(e)
-            print("error")
+            raise
 
     # method to fetch app reviews
     def total_reviews(self,appname):
         try:
-            # wait = WebDriverWait(self.driver, 2, poll_frequency=2,
-            #                      ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException,
-            #                                          NoSuchElementException])
-            # element = wait.until(EC.element_to_be_clickable((By.XPATH, self.play_store_reviews_xpath)))
+            time.sleep(3)
             reviews = self.driver.getelement(self.play_store_reviews_xpath.format(appname))
             print("Number of Reviews : ", reviews.text)
             return reviews.text
@@ -70,19 +53,18 @@ class PlayStorePage():
     # method to fetch app last Update
     def last_update(self,appname):
         try:
-            # wait = WebDriverWait(self.driver, 5, poll_frequency=2,
-            #                      ignored_exceptions=[ElementNotVisibleException, ElementNotSelectableException,
-            #                                          NoSuchElementException])
-            # element = wait.until(EC.element_to_be_clickable((By.XPATH, self.play_store_last_update_xpath)))
+            time.sleep(3)
             updatexpath = self.driver.getelement(self.play_store_last_update_xpath.format(appname))
             print("Last Update : ", updatexpath.text)
             return updatexpath.text
         except BaseException as e:
             print("Update element not found : ",(str(e.args)))
+            raise
 
     # method to click on Top Chart
     def top_chart_click(self):
         try:
+            #time.sleep(2)
             #self.driver.waitforelement(self.play_store_top_charts_click_xpath)
             topchartxpath = self.driver.getelement(self.play_store_top_charts_click_xpath)
             self.driver.elementClick(topchartxpath)
@@ -91,7 +73,7 @@ class PlayStorePage():
 
         except BaseException as e:
             print("Not Clicked on Top : ",str(e.args))
-
+            raise
 
     def calculate_score(self,today,reviews,lastupdate):
        print(lastupdate)
