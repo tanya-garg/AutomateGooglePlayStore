@@ -1,4 +1,5 @@
 from selenium import webdriver
+from datetime import datetime
 from datetime import date
 import time
 
@@ -43,7 +44,7 @@ class PlayStorePage():
     # method to fetch app reviews
     def total_reviews(self,appname):
         try:
-            time.sleep(3)
+            time.sleep(5)
             reviews = self.driver.getelement(self.play_store_reviews_xpath.format(appname))
             print("Number of Reviews : ", reviews.text)
             return reviews.text
@@ -77,9 +78,22 @@ class PlayStorePage():
             raise
 
     def calculate_score(self,today,reviews,lastupdate):
-        print(date(lastupdate))
-        #delta=today-lastdate
-        # print("Number of days : ",delta.days)
+        try:
+            reset = ""
+            last_d = datetime.strptime(lastupdate, '%B %d, %Y')  # convert string into date format
+           # print("Last update date : ",last_d.date())
+            print("Today's date : ",today)
+            total_days=((today-last_d.date()).days)
+            print("Number of days : ", total_days)
+            for i in reviews:
+                if (i != ','):
+                    reset = reset + i
+            num = int(reset)
+            # print(type(num))
+            score=(num/total_days)
+            print("Score : ",score)
+        except Exception as e:
+            print("Error in date : ",e.args)
 
 
 
