@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e431fea-5028-4350-9d38-955acf300444" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/playstorepage.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/playstorepage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seleniumdriver.py" beforeDir="false" afterPath="$PROJECT_DIR$/seleniumdriver.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e431fea-5028-4350-9d38-955acf300444" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

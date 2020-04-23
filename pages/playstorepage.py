@@ -91,7 +91,7 @@ class PlayStorePage():
                 total_days = ((today - last_d.date()).days)
             print("Number of days : ", total_days)
 
-            if(reviews=="" and total_days==1):
+            if(reviews==""):
                 score=0
             else:
                 for i in reviews:
