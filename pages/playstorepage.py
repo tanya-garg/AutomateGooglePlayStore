@@ -82,6 +82,7 @@ class PlayStorePage():
             reset = ""
             score = 0
             total_days = 0
+
             last_d = datetime.strptime(lastupdate, '%B %d, %Y')  # convert string into date format
            # print("Last update date : ",last_d.date())
             print("Today's date : ",today)
@@ -91,7 +92,7 @@ class PlayStorePage():
                 total_days = ((today - last_d.date()).days)
             print("Number of days : ", total_days)
 
-            if(reviews==""):
+            if(reviews == " "):
                 score=0
             else:
                 for i in reviews:
