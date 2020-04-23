@@ -80,17 +80,26 @@ class PlayStorePage():
     def calculate_score(self,today,reviews,lastupdate):
         try:
             reset = ""
+            score = 0
+            total_days = 0
             last_d = datetime.strptime(lastupdate, '%B %d, %Y')  # convert string into date format
            # print("Last update date : ",last_d.date())
             print("Today's date : ",today)
-            total_days=((today-last_d.date()).days)
+            if(today==last_d.date()):
+                total_days=1
+            else:
+                total_days = ((today - last_d.date()).days)
             print("Number of days : ", total_days)
-            for i in reviews:
-                if (i != ','):
-                    reset = reset + i
-            num = int(reset)
-            # print(type(num))
-            score=(num/total_days)
+
+            if(reviews=="" and total_days==1):
+                score=0
+            else:
+                for i in reviews:
+                    if (i != ','):
+                        reset = reset + i
+                num = int(reset)
+                # print(type(num))
+                score=(num/total_days)
             print("Score : ",score)
         except Exception as e:
             print("Error in date : ",e.args)

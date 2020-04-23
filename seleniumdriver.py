@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import ElementNotVisibleException, ElementNotSelectableException, NoSuchElementException
-from selenium.webdriver.common.keys import Keys
+
 
 import time
 
@@ -65,25 +65,25 @@ class Driver:
             print(str(e.args))
             raise
 
-    # Method for scrolling of web page
-    def webScroll(self, direction):
-
-        try:
-            if direction == 'up':
-                self.driver.execute_script("window.scrollBy(0,-1000);")
-                return True
-            elif direction == 'down':
-                self.driver.execute_script("window.scrollBy(0,1000);")
-                return True
-            elif direction == 'right':
-                self.driver.execute_script("window.scrollBy(1000,0);")
-                return True
-            else:
-                self.driver.execute_script("window.scrollBy(-1000,0);")
-                return True
-        except:
-            self.log.error("Scrolling failed")
-            raise
+    # # Method for scrolling of web page
+    # def webScroll(self, direction):
+    #
+    #     try:
+    #         if direction == 'up':
+    #             self.driver.execute_script("window.scrollBy(0,-1000);")
+    #             return True
+    #         elif direction == 'down':
+    #             self.driver.execute_script("window.scrollBy(0,1000);")
+    #             return True
+    #         elif direction == 'right':
+    #             self.driver.execute_script("window.scrollBy(1000,0);")
+    #             return True
+    #         else:
+    #             self.driver.execute_script("window.scrollBy(-1000,0);")
+    #             return True
+    #     except:
+    #         self.log.error("Scrolling failed")
+    #         raise
 
     # Method to wait for an element
     def waitforelement(self, locator):
